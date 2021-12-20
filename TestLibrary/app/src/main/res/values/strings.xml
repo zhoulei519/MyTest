@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">TestLibrary</string>
+    <string name="viewpager">ViewPager</string>
+    <string name="customize">Customize</string>
+    <string name="webView">WebView</string>
+</resources>
