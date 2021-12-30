@@ -1,4 +1,4 @@
-package com.zhou.testlibrary.viewpager
+package com.zhou.testlibrary.ui.viewpager
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

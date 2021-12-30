@@ -1,4 +1,4 @@
-package com.zhou.testlibrary.webview
+package com.zhou.testlibrary.ui.webview
 
 import android.content.Context
 import android.util.AttributeSet

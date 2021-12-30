@@ -5,8 +5,11 @@
       <map>
         <entry key="app/src/main/res/layout/activity_custom_show.xml" value="0.2620062294715948" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.194224826351776" />
+        <entry key="app/src/main/res/layout/activity_recyclerview.xml" value="0.2210144927536232" />
+        <entry key="app/src/main/res/layout/activity_user.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_view_pager.xml" value="0.11955420466058764" />
         <entry key="app/src/main/res/layout/activity_webview.xml" value="0.11820652173913043" />
+        <entry key="app/src/main/res/layout/item.xml" value="0.2210144927536232" />
         <entry key="app/src/main/res/layout/item_page.xml" value="0.1503623188405797" />
       </map>
     </option>

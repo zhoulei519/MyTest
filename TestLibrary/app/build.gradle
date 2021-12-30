@@ -39,6 +39,18 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.1.2'
     implementation project(path: ':viewpager2')
     api 'com.tencent.tbs:tbssdk:44115'//腾讯X5
+    //mvvm
+    implementation "android.arch.lifecycle:runtime:$rootProject.lifecycleRuntime"
+    implementation "android.arch.lifecycle:extensions:$rootProject.lifecycle"
+    annotationProcessor "android.arch.lifecycle:compiler:$rootProject.lifecycle"
+    //room数据库
+    // room
+    implementation "android.arch.persistence.room:runtime:$rootProject.room"
+    annotationProcessor "android.arch.persistence.room:compiler:$rootProject.room"
+
+    //网络请求
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
 
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'

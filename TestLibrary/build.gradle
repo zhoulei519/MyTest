@@ -12,6 +12,11 @@ buildscript {
         // in the individual module build.gradle files
     }
 }
+ext {
+    lifecycle = '1.0.0-rc1'
+    lifecycleRuntime = '1.0.3'
+    room = '1.0.0-rc1'
+}
 
 task clean(type: Delete) {
     delete rootProject.buildDir

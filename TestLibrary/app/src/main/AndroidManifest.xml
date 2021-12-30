@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.zhou.testlibrary">
 
+    <!--网络请求权限-->
     <uses-permission android:name="android.permission.INTERNET" />
 
     <!--X5权限-->
@@ -37,10 +38,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".viewpager.ViewPagerActivity"
+        <activity android:name="com.zhou.testlibrary.ui.viewpager.ViewPagerActivity"
             android:launchMode="singleTop"/>
-        <activity android:name=".customize.CustomizeShow"/>
-        <activity android:name=".webview.OptimizeWebView"/>
+        <activity android:name="com.zhou.testlibrary.ui.customize.CustomizeShow"/>
+        <activity android:name="com.zhou.testlibrary.ui.webview.OptimizeWebView"/>
+        <activity android:name=".ui.UserActivity"/>
+        <activity android:name=".ui.recyclerview.RecyclerViewActivity"/>
 
     </application>
 

@@ -1,4 +1,4 @@
-package com.zhou.testlibrary.customize
+package com.zhou.testlibrary.ui.customize
 
 import android.annotation.SuppressLint
 import android.content.Context

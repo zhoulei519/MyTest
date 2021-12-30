@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.zhou.testlibrary.customize.MoveTextView
+    <com.zhou.testlibrary.ui.customize.MoveTextView
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:background="#456789"

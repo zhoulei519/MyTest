@@ -30,5 +30,13 @@
         android:layout_marginHorizontal="10dp"
         android:text="@string/webView"
         android:background="@color/cardview_shadow_start_color"/>
+    <Button
+        android:id="@+id/btnUser"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:text="@string/getUser"
+        android:background="@color/cardview_shadow_start_color"/>
 
 </LinearLayout>

@@ -1,16 +1,16 @@
-package com.zhou.testlibrary.webview
+package com.zhou.testlibrary.ui.webview
 
 import android.os.Bundle
 import android.view.View
 import android.widget.LinearLayout
 import com.tencent.smtt.sdk.WebView
 import com.tencent.smtt.sdk.WebViewClient
-import com.zhou.testlibrary.BaseActivity
+import com.zhou.testlibrary.base.BaseActivity
 import com.zhou.testlibrary.R
 
-class OptimizeWebView :BaseActivity(){
+class OptimizeWebView : BaseActivity(){
     private var clear = false
-    private var webview:X5WebView? = null
+    private var webview: X5WebView? = null
     private var layout:LinearLayout? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

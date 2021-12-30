@@ -1,26 +1,28 @@
 package com.zhou.testlibrary
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
-import com.zhou.testlibrary.customize.CustomizeShow
-import com.zhou.testlibrary.viewpager.ViewPagerActivity
-import com.zhou.testlibrary.webview.OptimizeWebView
+import com.zhou.testlibrary.base.BaseActivity
+import com.zhou.testlibrary.ui.UserActivity
+import com.zhou.testlibrary.ui.customize.CustomizeShow
+import com.zhou.testlibrary.ui.recyclerview.RecyclerViewActivity
+import com.zhou.testlibrary.ui.viewpager.ViewPagerActivity
+import com.zhou.testlibrary.ui.webview.OptimizeWebView
 
 class MainActivity : BaseActivity() ,View.OnClickListener{
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        findView(R.id.btnViewPager,R.id.btnCustomize,R.id.btnWebView)
+        findView(R.id.btnViewPager,R.id.btnCustomize,R.id.btnWebView,R.id.btnUser)
     }
     override fun onClick(view:View){
         when(view.id){
             R.id.btnViewPager -> startActivity(ViewPagerActivity().javaClass)
             R.id.btnCustomize -> startActivity(CustomizeShow().javaClass)
             R.id.btnWebView -> startActivity(OptimizeWebView().javaClass)
+            R.id.btnUser -> startActivity(RecyclerViewActivity().javaClass)
             else -> { // 注意这个块
                 print("x 不是 1 "+ "也不是 2")
             }

@@ -1,4 +1,4 @@
-package com.zhou.testlibrary.viewpager
+package com.zhou.testlibrary.ui.viewpager
 
 import android.view.LayoutInflater
 import android.view.View

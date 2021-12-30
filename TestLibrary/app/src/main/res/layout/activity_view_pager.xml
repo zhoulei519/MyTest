@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <com.zhou.testlibrary.viewpager.DisableMultiPointerFrameLayout
+    <com.zhou.testlibrary.ui.viewpager.DisableMultiPointerFrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -19,7 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="30dp" />
-    </com.zhou.testlibrary.viewpager.DisableMultiPointerFrameLayout>
+    </com.zhou.testlibrary.ui.viewpager.DisableMultiPointerFrameLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
