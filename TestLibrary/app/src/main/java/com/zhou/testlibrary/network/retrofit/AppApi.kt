@@ -1,4 +1,4 @@
-package com.zhou.testlibrary.network
+package com.zhou.testlibrary.network.retrofit
 
 import com.zhou.testlibrary.bean.User
 import retrofit2.Call

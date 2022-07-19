@@ -1,7 +1,7 @@
 package com.zhou.testlibrary.repository
 
-import com.zhou.testlibrary.network.AppApi
-import com.zhou.testlibrary.network.RetrofitFactory
+import com.zhou.testlibrary.network.retrofit.AppApi
+import com.zhou.testlibrary.network.retrofit.RetrofitFactory
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.zhou.testlibrary.bean.User

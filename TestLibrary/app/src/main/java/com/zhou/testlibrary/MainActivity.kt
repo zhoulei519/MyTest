@@ -4,11 +4,12 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import com.zhou.testlibrary.base.BaseActivity
-import com.zhou.testlibrary.ui.UserActivity
 import com.zhou.testlibrary.ui.customize.CustomizeShow
 import com.zhou.testlibrary.ui.recyclerview.RecyclerViewActivity
 import com.zhou.testlibrary.ui.viewpager.ViewPagerActivity
 import com.zhou.testlibrary.ui.webview.OptimizeWebView
+import com.zhou.testlibrary.utils.LogUtil
+import com.zhou.testlibrary.utils.TelephonyUtil
 
 class MainActivity : BaseActivity() ,View.OnClickListener{
 

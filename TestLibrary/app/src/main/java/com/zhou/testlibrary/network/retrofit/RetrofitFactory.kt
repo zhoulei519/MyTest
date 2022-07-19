@@ -1,4 +1,4 @@
-package com.zhou.testlibrary.network
+package com.zhou.testlibrary.network.retrofit
 
 import retrofit2.Retrofit
 

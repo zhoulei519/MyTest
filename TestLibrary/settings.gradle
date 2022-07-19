@@ -9,3 +9,4 @@ dependencyResolutionManagement {
 rootProject.name = "TestLibrary"
 include ':app'
 include ':viewpager2'
+include ':common'

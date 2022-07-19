@@ -7,10 +7,10 @@ import com.zhou.testlibrary.R
 import com.zhou.testlibrary.base.BaseActivity
 import com.zhou.testlibrary.bean.User
 import com.zhou.testlibrary.utils.LogUtil
-import com.zhou.testlibrary.viewModel.UserViewModel
+import com.zhou.testlibrary.viewmodel.UserModel
 
 class UserActivity : BaseActivity() {
-    private var userViewModel: UserViewModel? = null
+    private var userViewModel: UserModel? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_user)
@@ -21,7 +21,7 @@ class UserActivity : BaseActivity() {
         userViewModel = ViewModelProvider(
             this,
             ViewModelProvider.NewInstanceFactory()
-        ).get(UserViewModel::class.java)
+        ).get(UserModel::class.java)
         userViewModel!!.getUser("zhou")?.observe(this, Observer {
             it?.let { it1 -> updateUser(it1) }
         })
