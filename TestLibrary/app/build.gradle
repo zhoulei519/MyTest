@@ -10,8 +10,8 @@ android {
         applicationId "com.zhou.testlibrary"
         minSdk 21
         targetSdk 31
-        versionCode 1
-        versionName "1.0"
+        versionCode 9
+        versionName "1.09"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -37,8 +37,9 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.4.0'
     implementation 'com.google.android.material:material:1.4.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.2'
-    implementation project(path: ':viewpager2')
-    api 'com.tencent.tbs:tbssdk:44115'//腾讯X5
+    implementation project(path: ':lib_common')
+    //腾讯X5
+    api 'com.tencent.tbs:tbssdk:44115'
     //mvvm
     implementation "android.arch.lifecycle:runtime:$rootProject.lifecycleRuntime"
     implementation "android.arch.lifecycle:extensions:$rootProject.lifecycle"

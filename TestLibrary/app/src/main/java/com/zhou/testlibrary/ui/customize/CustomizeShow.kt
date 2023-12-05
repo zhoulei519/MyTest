@@ -10,7 +10,5 @@ class CustomizeShow : BaseActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_custom_show)
-        finish()
-        LogUtil.d("finish之后只行了我")
     }
 }

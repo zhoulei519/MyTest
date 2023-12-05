@@ -3,8 +3,8 @@ package com.zhou.testlibrary.ui.viewpager
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager2.widget.ViewPager2
+import com.zhou.common.view.viewpager.DayLetterPageTransformer
 import com.zhou.testlibrary.R
-import com.zhou.viewpager2.DayLetterPageTransformer
 
 class ViewPagerActivity :AppCompatActivity() {
     private var data = ArrayList<Int>()
