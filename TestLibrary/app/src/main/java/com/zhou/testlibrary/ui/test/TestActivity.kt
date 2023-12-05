@@ -23,18 +23,6 @@ class TestActivity :BaseActivity(){
         }
     }
 
-    fun openDetail(){
-        val intent = Intent.parseUri("intent://appstore/openAppDetail?appId=444#Intent;scheme=qianxin;launchFlags=0x4000000;end", Intent.URI_INTENT_SCHEME)
-        startActivity(intent)
-    }
-
-    fun openLogin(){
-        val intent = Intent()
-        intent.action = "com.appstore.manager.login.action"
-        intent.`package` = "com.zte.appstore.ui"
-        startActivityForResult(intent,1)
-    }
-
     fun openFile(){
         val uri =
             Uri.parse("content://com.android.externalstorage.documents/document/primary:Download")
