@@ -7,43 +7,57 @@
     tools:context=".MainActivity">
     <Button
         android:id="@+id/btnViewPager"
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="50dp"
         android:layout_marginTop="10dp"
         android:layout_marginHorizontal="10dp"
+        android:textColor="@color/black"
         android:text="@string/viewpager"
-        android:background="@color/cardview_shadow_start_color"/>
+        android:background="@color/teal_200"/>
 
     <Button
         android:id="@+id/btnCustomize"
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="50dp"
         android:layout_marginTop="10dp"
         android:layout_marginHorizontal="10dp"
+        android:textColor="@color/black"
         android:text="@string/customize"
-        android:background="@color/cardview_shadow_start_color"/>
+        android:background="@color/teal_200"/>
     <Button
         android:id="@+id/btnWebView"
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="50dp"
         android:layout_marginTop="10dp"
         android:layout_marginHorizontal="10dp"
+        android:textColor="@color/black"
         android:text="@string/webView"
-        android:background="@color/cardview_shadow_start_color"/>
+        android:background="@color/teal_200"/>
     <Button
         android:id="@+id/btnUser"
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="50dp"
         android:layout_marginTop="10dp"
         android:layout_marginHorizontal="10dp"
+        android:textColor="@color/black"
         android:text="@string/getUser"
-        android:background="@color/cardview_shadow_start_color"/>
+        android:background="@color/teal_200"/>
     <Button
         android:id="@+id/btnTest"
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="50dp"
         android:layout_marginTop="10dp"
         android:layout_marginHorizontal="10dp"
+        android:textColor="@color/black"
         android:text="@string/btnTest"
-        android:background="@color/cardview_shadow_start_color"/>
+        android:background="@color/teal_200"/>
+    <Button
+        android:id="@+id/btnConstraintLayout"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:textColor="@color/black"
+        android:text="@string/btnConstraintLayout"
+        android:background="@color/teal_200"/>
 </LinearLayout>

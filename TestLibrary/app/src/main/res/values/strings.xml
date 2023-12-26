@@ -5,4 +5,6 @@
     <string name="webView">WebView</string>
     <string name="getUser">getUser</string>
     <string name="btnTest">btnTest</string>
+    <string name="btnConstraintLayout">btnConstraintLayout</string>
+    <string name="hello">hello</string>
 </resources>

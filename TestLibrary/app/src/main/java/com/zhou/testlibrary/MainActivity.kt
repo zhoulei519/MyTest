@@ -4,20 +4,19 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import com.zhou.testlibrary.base.BaseActivity
+import com.zhou.testlibrary.baidu.speecha.ActivityAbstractRecog
 import com.zhou.testlibrary.ui.customize.CustomizeShow
 import com.zhou.testlibrary.ui.recyclerview.RecyclerViewActivity
 import com.zhou.testlibrary.ui.test.TestActivity
 import com.zhou.testlibrary.ui.viewpager.ViewPagerActivity
 import com.zhou.testlibrary.ui.webview.OptimizeWebView
-import com.zhou.testlibrary.utils.LogUtil
-import com.zhou.testlibrary.utils.TelephonyUtil
 
 class MainActivity : BaseActivity() ,View.OnClickListener{
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        findView(R.id.btnViewPager,R.id.btnCustomize,R.id.btnWebView,R.id.btnUser,R.id.btnTest)
+        findView(R.id.btnViewPager,R.id.btnCustomize,R.id.btnWebView,R.id.btnUser,R.id.btnTest,R.id.btnConstraintLayout)
     }
     override fun onClick(view:View){
         when(view.id){
@@ -26,6 +25,7 @@ class MainActivity : BaseActivity() ,View.OnClickListener{
             R.id.btnWebView -> startActivity(OptimizeWebView().javaClass)
             R.id.btnUser -> startActivity(RecyclerViewActivity().javaClass)
             R.id.btnTest -> startActivity(TestActivity().javaClass)
+            R.id.btnConstraintLayout -> startActivity(ActivityAbstractRecog().javaClass)
             else -> { // 注意这个块
                 print("x 不是 1 "+ "也不是 2")
             }

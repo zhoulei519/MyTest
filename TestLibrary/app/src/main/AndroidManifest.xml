@@ -3,8 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.zhou.testlibrary">
 
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
     <!--网络请求权限-->
     <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
     <!--X5权限-->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
@@ -13,6 +19,8 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
+    <uses-permission android:name="android.permission.CAMERA" />
+
     <application
         android:name=".app.MyApplication"
         android:allowBackup="true"
@@ -20,7 +28,8 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.TestLibrary">
+        android:theme="@style/Theme.TestLibrary"
+        android:usesCleartextTraffic="true">
 
         <!--该Service仅在TBS内核首次Dex加载时触发并执行dex2oat任务，任务完成后自动结束-->
         <service
@@ -55,6 +64,9 @@
         <activity android:name=".ui.UserActivity"/>
         <activity android:name=".ui.recyclerview.RecyclerViewActivity"/>
         <activity android:name=".ui.test.TestActivity" />
+        <activity android:name=".ui.constraint.ConstraintLayoutActivity" />
+        <activity android:name=".speech.baidu.minispeech.ActivityMyMiniRecog" />
+        <activity android:name=".baidu.speecha.ActivityAbstractRecog" />
 
     </application>
 
