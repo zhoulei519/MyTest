@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!--填充颜色-->
+    <solid android:color="#2D9D75" />
+
+    <!-- 圆角半径是高度的一般就是一个圆弧了 -->
+    <corners android:radius="24dp" />
+</shape>

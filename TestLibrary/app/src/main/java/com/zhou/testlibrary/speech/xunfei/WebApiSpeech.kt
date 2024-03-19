@@ -108,7 +108,8 @@ class WebApiSpeech : AppCompatActivity() {
         val paramString = parseMapToPathParam(map)
         val url = "$host/v2/api/upload?$paramString"
         val fileInputStream = FileInputStream(audio)
-        val requestBody = InputStreamRequestBody(fileInputStream, "application/json")
+//        val requestBody = InputStreamRequestBody(fileInputStream, "application/json")
+        val requestBody = RequestBody.create(MediaType.parse("application/octet-stream"),audio)
         val request: Request = Request.Builder()
             .url(url)
             .post(requestBody)

@@ -1,9 +1,8 @@
-package com.zhou.testlibrary.utils
+package com.zhou.common.utils
 
 import android.content.Context
 import java.lang.reflect.Method
 import android.telephony.TelephonyManager
-import com.zhou.common.utils.LogUtil
 import java.lang.Exception
 
 

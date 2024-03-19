@@ -2,4 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.zhou.common">
 
+    <application>
+        <!-- glide使用okhttp -->
+        <meta-data
+            android:name="com.zhou.common.utils.glide.MyAppGlideModule"
+            android:value="AppGlideModule" />
+    </application>
 </manifest>

@@ -9,4 +9,3 @@ dependencyResolutionManagement {
 rootProject.name = "TestLibrary"
 include ':app'
 include ':lib_common'
-include ':lib_baidu_speech'

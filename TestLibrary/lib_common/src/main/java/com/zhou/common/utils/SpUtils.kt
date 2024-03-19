@@ -66,9 +66,9 @@ object SpUtils {
 
     fun contains(key: String): Boolean? = MMKV.defaultMMKV()?.contains(key)
 
-    fun <T> setArray(list: ArrayList<T>, name: String): Boolean? {
+    fun <T> setArray(list: ArrayList<T>, name: String): Boolean {
         val kv = MMKV.defaultMMKV()
-        if (list == null || list.isEmpty()) { //清空
+        if (list.isEmpty()) { //清空
             kv!!.putInt(name + "size", 0)
             val size = kv.getInt(name + "size", 0)
             for (i in 0 until size) {

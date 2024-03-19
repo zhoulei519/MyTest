@@ -1,7 +1,5 @@
 package com.zhou.common.utils.glide
 
-import android.content.Context
-import android.graphics.Bitmap
 import android.text.TextUtils
 import android.widget.ImageView
 import com.bumptech.glide.Glide
@@ -10,15 +8,11 @@ import com.bumptech.glide.load.resource.bitmap.CenterCrop
 import com.bumptech.glide.load.resource.bitmap.CircleCrop
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners
 import com.bumptech.glide.request.RequestOptions
-import com.bumptech.glide.request.target.SimpleTarget
 import com.zhou.common.utils.UIUtils
 import java.io.File
 
 object GlideUtil {
     fun showWithUrlRound(url: String, target: ImageView, error: Int, placeholder: Int, dp: Float) {
-        if (TextUtils.isEmpty(url)) {
-            return
-        }
         val optionInto = RequestOptions()
             .transform(RoundedCorners(UIUtils.dp2Px(target.context,dp).toInt()))
             .skipMemoryCache(false)
@@ -29,9 +23,6 @@ object GlideUtil {
             .error(error).apply(optionInto).into(target)
     }
     fun showWithUrl(url: String, target: ImageView, error: Int, placeholder: Int) {
-        if (TextUtils.isEmpty(url)) {
-            return
-        }
         val optionInto = RequestOptions()
             .skipMemoryCache(false)
             .diskCacheStrategy(DiskCacheStrategy.AUTOMATIC)
@@ -40,9 +31,6 @@ object GlideUtil {
 
 
     fun showWithUrl(url: String, target: ImageView, error: Int) {
-        if (TextUtils.isEmpty(url)) {
-            return
-        }
         val optionInto = RequestOptions()
             .skipMemoryCache(false)
             .diskCacheStrategy(DiskCacheStrategy.AUTOMATIC)
@@ -50,9 +38,6 @@ object GlideUtil {
     }
 
     fun showWithFullUrl(url: String, target: ImageView, error: Int, placeholder: Int) {
-        if (TextUtils.isEmpty(url)) {
-            return
-        }
         Glide.with(target.context).load(getGlideUrl(url)).placeholder(placeholder).error(error).into(target)
     }
 
@@ -60,17 +45,17 @@ object GlideUtil {
         Glide.with(target.context).load(resId).into(target)
     }
 
-    fun showWithPath(path: String?, target: ImageView) {
+    fun showWithPath(path: String, target: ImageView) {
         Glide.with(target.context).load(File(path)).into(target)
     }
 
-    fun showRoundWithPath(path: String?, target: ImageView) {
+    fun showRoundWithPath(path: String, target: ImageView) {
         Glide.with(target.context)
             .load(File(path))
             .transform(CenterCrop(), RoundedCorners(UIUtils.dp2Px(target.context,4f).toInt())).into(target)
     }
 
-    fun showCircleWithPath(path: String?, target: ImageView) {
+    fun showCircleWithPath(path: String, target: ImageView) {
         Glide.with(target.context).asBitmap().transform(CircleCrop()).load(File(path)).into(target)
     }
 
@@ -108,22 +93,4 @@ object GlideUtil {
             .transform(CenterCrop(),RoundedCorners(radius))
             .placeholder(placeholder).error(error).apply(optionInto).into(target)
     }
-
-    fun loadImageFromUrl(context: Context,url:String,error: Int,placeholder: Int,onCallback:SimpleTarget<Bitmap>){
-        try {
-            val option = RequestOptions()
-                .centerCrop()
-                .placeholder(placeholder)
-                .error(error)
-            Glide.with(context)
-                .asBitmap()
-                .load(url)
-                .apply(option)
-                .into(onCallback)
-        }catch (e:Exception){
-            e.printStackTrace()
-        }
-    }
-
-
 }

@@ -17,10 +17,6 @@ class JustifyTextView @JvmOverloads constructor(
     private var mLineY: Int = 0
     private var mViewWidth: Float = 0f
 
-    override fun onLayout(changed: Boolean, left: Int, top: Int, right: Int, bottom: Int) {
-        super.onLayout(changed, left, top, right, bottom)
-    }
-
     override fun onDraw(canvas: Canvas) {
         val paint = paint
         paint.color = currentTextColor
@@ -46,6 +42,10 @@ class JustifyTextView @JvmOverloads constructor(
         }
     }
 
+    /**
+     * 设置文字宽度
+     * @param tv 最大宽度的TextView
+     */
     fun setTitleWidth(tv: TextView) {
         val text = tv.text.toString()
         val width = StaticLayout.getDesiredWidth(text, 0, text.length, tv.paint)

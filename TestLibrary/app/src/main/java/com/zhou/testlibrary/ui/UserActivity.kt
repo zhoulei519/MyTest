@@ -25,6 +25,8 @@ class UserActivity : BaseActivity() {
         userViewModel!!.getUser("zhou")?.observe(this, Observer {
             it?.let { it1 -> updateUser(it1) }
         })
+
+//        userViewModel!!.getPublic()
     }
     private fun updateUser(user:User){
         LogUtil.d("更新UI")

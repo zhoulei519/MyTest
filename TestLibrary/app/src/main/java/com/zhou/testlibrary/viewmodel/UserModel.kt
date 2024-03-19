@@ -1,14 +1,9 @@
 package com.zhou.testlibrary.viewmodel
 
+import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import com.zhou.testlibrary.bean.User
-
-import androidx.lifecycle.LiveData
-
 import com.zhou.testlibrary.repository.UserRepository
-
-
-
 
 
 class UserModel : ViewModel() {
@@ -20,7 +15,7 @@ class UserModel : ViewModel() {
         return user
     }
 
-    fun setUserName(userName: String){
+    fun setUserName(userName: String) {
         user?.value?.name = userName
     }
 }

@@ -5,59 +5,15 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
-    <Button
-        android:id="@+id/btnViewPager"
-        android:layout_width="200dp"
+    <TextView
+        android:id="@+id/tv_custom_view"
+        android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="10dp"
         android:layout_marginHorizontal="10dp"
-        android:textColor="@color/black"
-        android:text="@string/viewpager"
-        android:background="@color/teal_200"/>
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:background="@drawable/shape_btn_bg"
+        android:text="@string/main_custom_view"/>
 
-    <Button
-        android:id="@+id/btnCustomize"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginHorizontal="10dp"
-        android:textColor="@color/black"
-        android:text="@string/customize"
-        android:background="@color/teal_200"/>
-    <Button
-        android:id="@+id/btnWebView"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginHorizontal="10dp"
-        android:textColor="@color/black"
-        android:text="@string/webView"
-        android:background="@color/teal_200"/>
-    <Button
-        android:id="@+id/btnUser"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginHorizontal="10dp"
-        android:textColor="@color/black"
-        android:text="@string/getUser"
-        android:background="@color/teal_200"/>
-    <Button
-        android:id="@+id/btnTest"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginHorizontal="10dp"
-        android:textColor="@color/black"
-        android:text="@string/btnTest"
-        android:background="@color/teal_200"/>
-    <Button
-        android:id="@+id/btnConstraintLayout"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginHorizontal="10dp"
-        android:textColor="@color/black"
-        android:text="@string/btnConstraintLayout"
-        android:background="@color/teal_200"/>
 </LinearLayout>

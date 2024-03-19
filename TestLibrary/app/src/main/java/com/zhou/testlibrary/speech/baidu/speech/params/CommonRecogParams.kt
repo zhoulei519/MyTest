@@ -5,7 +5,7 @@ import android.content.SharedPreferences
 import android.os.Environment
 import com.baidu.speech.asr.SpeechConstant
 import com.zhou.testlibrary.R
-import com.zhou.testlibrary.baidu.speecha.utils.FileUtil
+import com.zhou.testlibrary.speech.baidu.speech.utils.FileUtil
 
 /**
  * @author: zl

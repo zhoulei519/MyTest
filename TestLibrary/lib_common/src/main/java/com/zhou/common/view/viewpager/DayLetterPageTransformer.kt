@@ -1,5 +1,6 @@
 package com.zhou.common.view.viewpager
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.os.Build
 import android.util.Log
@@ -11,6 +12,7 @@ import com.zhou.common.utils.UIUtils
 class DayLetterPageTransformer(context: Context) : ViewPager2.OnPageChangeCallback(), ViewPager2.PageTransformer {
 
     companion object {
+        @SuppressLint("ObsoleteSdkInt")
         private val belowLollipop = Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP
     }
 

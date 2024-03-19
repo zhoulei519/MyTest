@@ -1,10 +1,10 @@
 package com.zhou.testlibrary.repository
 
-import com.zhou.testlibrary.network.retrofit.AppApi
-import com.zhou.testlibrary.network.retrofit.RetrofitFactory
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import com.zhou.common.network.retrofit.RetrofitFactory
 import com.zhou.testlibrary.bean.User
+import com.zhou.testlibrary.network.api.AppApi
 import com.zhou.testlibrary.utils.LogUtil
 import retrofit2.Call
 import retrofit2.Callback

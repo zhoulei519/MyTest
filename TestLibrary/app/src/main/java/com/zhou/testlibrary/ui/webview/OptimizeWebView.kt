@@ -25,7 +25,7 @@ class OptimizeWebView : BaseActivity(){
         /* if SDK version is greater of 19 then activate hardware acceleration
         otherwise activate software acceleration  */
         webview?.setLayerType(View.LAYER_TYPE_HARDWARE,null)
-        webview?.loadUrl("https://www.baidu.com")
+        webview?.loadUrl("file:///android_asset/test.html")
         // Set web view client
         webview?.setWebViewClient(object : WebViewClient() {
             override fun doUpdateVisitedHistory(webView: WebView, s: String, b: Boolean) {

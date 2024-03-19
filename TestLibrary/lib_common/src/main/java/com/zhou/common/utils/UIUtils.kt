@@ -15,7 +15,7 @@ object UIUtils {
      * 获取屏幕宽
      */
     fun getScreenWidth(context: Context?): Float {
-        var dm = context?.resources?.displayMetrics
+        val dm = context?.resources?.displayMetrics
         val screenWidth = dm?.widthPixels // 屏幕宽（像素）
         return screenWidth?.toFloat()!!
     }

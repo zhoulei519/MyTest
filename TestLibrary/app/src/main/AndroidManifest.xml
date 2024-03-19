@@ -29,8 +29,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TestLibrary"
-        android:usesCleartextTraffic="true">
-
+        android:usesCleartextTraffic="true"
+        tools:targetApi="m">
         <!--该Service仅在TBS内核首次Dex加载时触发并执行dex2oat任务，任务完成后自动结束-->
         <service
             android:name="com.tencent.smtt.export.external.DexClassLoaderProviderService"
@@ -66,7 +66,7 @@
         <activity android:name=".ui.test.TestActivity" />
         <activity android:name=".ui.constraint.ConstraintLayoutActivity" />
         <activity android:name=".speech.baidu.minispeech.ActivityMyMiniRecog" />
-        <activity android:name=".baidu.speecha.ActivityAbstractRecog" />
+        <activity android:name=".speech.baidu.speech.ActivityAbstractRecog" />
 
     </application>
 

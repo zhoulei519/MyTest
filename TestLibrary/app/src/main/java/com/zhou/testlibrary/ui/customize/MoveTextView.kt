@@ -14,29 +14,32 @@ class MoveTextView @JvmOverloads constructor(
     defStyleAttr: Int = 0
 ) : androidx.appcompat.widget.AppCompatTextView(context, attributeSet, defStyleAttr) {
 
-    private var mX = 0f
-    private var mY = 0f
-    var moveX = 0f
-    var moveY = 0f
+    private var downX = 0f
+    private var downY = 0f
+    private var moveX = 0f
+    private var moveY = 0f
+    private var lastTranslationX = 0f
+    private var lastTranslationY = 0f
 
     @SuppressLint("ClickableViewAccessibility")
     override fun onTouchEvent(event: MotionEvent): Boolean {
         when (event.action) {
             MotionEvent.ACTION_DOWN -> {
                 //按下的时候获取手指触摸的坐标
-                mX = event.rawX
-                mY = event.rawY
+                downX = event.rawX
+                downY = event.rawY
             }
             MotionEvent.ACTION_MOVE -> {
                 //滑动时计算偏移量
-                moveX = event.rawX - mX
-                moveY = event.rawY - mY
+                moveX = event.rawX - downX
+                moveY = event.rawY - downY
                 //随手指移动
-                translationX = moveX
-                translationY = moveY
+                translationX = moveX + lastTranslationX
+                translationY = moveY + lastTranslationY
             }
             MotionEvent.ACTION_UP -> {
-
+                lastTranslationX = translationX
+                lastTranslationY = translationY
             }
         }
         return true
