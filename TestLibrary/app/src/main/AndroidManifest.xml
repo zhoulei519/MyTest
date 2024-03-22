@@ -59,7 +59,9 @@
         </activity>
         <activity android:name="com.zhou.testlibrary.ui.viewpager.ViewPagerActivity"
             android:launchMode="singleTop"/>
-        <activity android:name="com.zhou.testlibrary.ui.customize.CustomizeShow"/>
+        <activity android:name="com.zhou.testlibrary.ui.customize.CustomShowActivity"/>
+        <activity android:name="com.zhou.testlibrary.ui.customize.CustomTextView"/>
+        <activity android:name="com.zhou.testlibrary.ui.customize.CustomImageView"/>
         <activity android:name="com.zhou.testlibrary.ui.webview.OptimizeWebView"/>
         <activity android:name=".ui.UserActivity"/>
         <activity android:name=".ui.recyclerview.RecyclerViewActivity"/>

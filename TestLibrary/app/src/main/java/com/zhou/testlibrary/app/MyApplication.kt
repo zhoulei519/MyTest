@@ -5,6 +5,7 @@ import android.content.Context
 import com.tencent.smtt.export.external.TbsCoreSettings
 import com.tencent.smtt.sdk.QbSdk
 import com.zhou.common.utils.SpUtils
+import com.zhou.common.utils.crash.CrashHandler
 
 class MyApplication : Application() {
 
@@ -26,6 +27,7 @@ class MyApplication : Application() {
         QbSdk.initTbsSettings(map)
 
         initMMKV()
+        CrashHandler.instance.init(myContext)
     }
 
     /**

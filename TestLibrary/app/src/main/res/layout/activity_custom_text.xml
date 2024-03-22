@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.zhou.common.view.text.MoveTextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#456789"
+        android:gravity="center"
+        android:text="@string/custom_move_view"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <com.zhou.common.view.text.JustifyTextView
+        android:id="@+id/tv_short"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/custom_short_string"/>
+    <com.zhou.common.view.text.JustifyTextView
+        android:id="@+id/tv_long"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/custom_long_string"/>
+
+    <com.zhou.common.view.text.BoldTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/custom_bold_string"
+        android:textSize="18sp"
+        app:stroke_width="0.3"/>
+    <com.zhou.common.view.text.BoldTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/custom_bold_string"
+        android:textSize="18sp"
+        app:stroke_width="0.5"/>
+    <com.zhou.common.view.text.BoldTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/custom_bold_string"
+        android:textSize="18sp"
+        app:stroke_width="0.8"/>
+    <com.zhou.common.view.text.BoldTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/custom_bold_string"
+        android:textSize="18sp"
+        app:stroke_width="1"/>
+    <com.zhou.common.view.text.BoldTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/custom_bold_string"
+        android:textSize="18sp"
+        app:stroke_width="1.2"/>
+
+</LinearLayout>

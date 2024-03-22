@@ -30,7 +30,7 @@ object GlideUtil {
     }
 
 
-    fun showWithUrl(url: String, target: ImageView, error: Int) {
+    fun showWithUrl(url: String, target: ImageView, error: Int = 0) {
         val optionInto = RequestOptions()
             .skipMemoryCache(false)
             .diskCacheStrategy(DiskCacheStrategy.AUTOMATIC)

@@ -7,14 +7,14 @@ import com.zhou.testlibrary.base.BaseActivity
 import com.zhou.testlibrary.R
 import com.zhou.testlibrary.utils.LogUtil
 
-class CustomizeShow : BaseActivity(){
+class CustomTextView : BaseActivity(){
     private lateinit var tvShort: JustifyTextView
     private lateinit var tvLong: JustifyTextView
 
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_custom_show)
+        setContentView(R.layout.activity_custom_text)
         tvShort = findViewById(R.id.tv_short)
         tvLong = findViewById(R.id.tv_long)
         tvShort.setTitleWidth(tvLong)

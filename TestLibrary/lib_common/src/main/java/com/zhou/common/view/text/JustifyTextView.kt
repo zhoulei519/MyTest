@@ -7,7 +7,7 @@ import android.util.AttributeSet
 import android.widget.TextView
 
 /**
- * @author: zhoulei03
+ * @author: zhouLei
  * @date: 2023/7/11
  * 设置同宽TextView
  */

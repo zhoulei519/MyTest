@@ -1,11 +1,9 @@
 package com.zhou.testlibrary
 
-import android.content.Intent
-import android.content.res.Resources
 import android.os.Bundle
 import android.view.View
 import com.zhou.testlibrary.base.BaseActivity
-import com.zhou.testlibrary.ui.customize.CustomizeShow
+import com.zhou.testlibrary.ui.customize.CustomShowActivity
 
 class MainActivity : BaseActivity() ,View.OnClickListener{
 
@@ -16,7 +14,7 @@ class MainActivity : BaseActivity() ,View.OnClickListener{
     }
     override fun onClick(view:View){
         when(view.id){
-            R.id.tv_custom_view -> startActivity(CustomizeShow().javaClass)
+            R.id.tv_custom_view -> startActivity(CustomShowActivity().javaClass)
             else -> { // 注意这个块
                 print("x 不是 1 "+ "也不是 2")
             }
@@ -27,11 +25,5 @@ class MainActivity : BaseActivity() ,View.OnClickListener{
     private fun findView(id:Int){
         val view:View = findViewById(id)
         view.setOnClickListener(this)
-    }
-
-    private fun startActivity(clazz:Class<Any>){
-        val intent = Intent()
-        intent.setClass(this,clazz)
-        startActivity(intent)
     }
 }
