@@ -55,6 +55,14 @@
         android:layout_height="wrap_content"
         android:text="@string/custom_bold_string"
         android:textSize="18sp"
-        app:stroke_width="1.2"/>
+        app:stroke_width="1.8"/>
+    <com.zhou.common.view.text.ExpandableTextView
+        android:id="@+id/tv_expand"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_1D2129_30"
+        android:textSize="14sp"
+        app:expandTextColor="@color/color_1D2129_30"
+        app:showLines="2"/>
 
 </LinearLayout>

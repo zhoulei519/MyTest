@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+
+    <TextView
+        android:id="@+id/tv_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="2"/>
+
+    <com.zhou.common.view.text.ClickRightTextView
+        android:id="@+id/tv_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:drawablePadding="15dp"
+        android:visibility="gone"
+        android:ellipsize="end"
+        android:focusable="true"
+        android:maxLines="1" />
+</LinearLayout>

@@ -4,4 +4,14 @@
     <declare-styleable name="BoldTextView">
         <attr name="stroke_width" format="float"/>
     </declare-styleable>
+    <!-- 展开TextView -->
+    <declare-styleable name="ExpandableTextView">
+        <attr name="expandText" format="string" />
+        <attr name="expandTextColor" format="color" />
+        <attr name="expandTextSize" format="dimension" />
+        <attr name="myExpandDrawable" format="reference" />
+        <attr name="myCollapseDrawable" format="reference" />
+        <attr name="showLines" format="integer" />
+        <attr name="isExpand" format="boolean" />
+    </declare-styleable>
 </resources>
